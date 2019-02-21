@@ -38,12 +38,12 @@ options = {
     "format":"bestaudio/audio",
 }
 dl = YoutubeDL(options)
-for i in new_list:
-    key = songs["title"]
-    print(key)
-    dl.download([key])
 # for i in new_list:
-#     print(i["title"])
-#     dl.download(i["title"])
+#     key = i["title"]
+#     print(key)
+#     dl.download([key])
+for i in new_list:
+    print(i["title"])
+    dl.download(i["title"])
 
 
